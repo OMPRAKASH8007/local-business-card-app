@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mycompany.pvrcinema.MainActivity">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark" >
+
+
+    <ImageView
+        android:id="@+id/id_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pvr"
+        android:scaleType="centerCrop"
+        android:layout_alignParentTop="true"/>
+
+    <ImageView
+        android:id="@+id/ic_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_img"
+        android:src="@drawable/mapmark" />
+
+    <TextView
+        android:id="@+id/id_address"
+        android:layout_below="@id/id_img"
+        android:layout_toRightOf="@id/ic_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/string_padding"
+        android:text="@string/address"
+        android:textColor="@color/golden"
+        android:textSize="@dimen/textSize"
+        android:onClick="locate"/>
+    <ImageView
+        android:id="@+id/ic_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_address"
+        android:src="@drawable/call" />
+    <TextView
+        android:id="@+id/id_contact"
+        android:layout_below="@id/id_address"
+        android:layout_toRightOf="@id/ic_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/string_padding"
+        android:text="@string/contact"
+        android:textColor="@color/golden"
+        android:textSize="@dimen/textSize"
+        android:onClick="call"/>
+    <ImageView
+        android:id="@+id/ic_web"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_contact"
+        android:src="@drawable/website" />
+    <TextView
+        android:id="@+id/id_website"
+        android:layout_below="@id/id_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/string_padding"
+        android:layout_toRightOf="@id/ic_web"
+        android:text="@string/website"
+        android:textColor="@color/golden"
+        android:textSize="@dimen/textSize"
+        android:onClick="web"/>
+    <ImageView
+        android:id="@+id/ic_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_website"
+        android:src="@drawable/info" />
+    <TextView
+        android:id="@+id/id_desc"
+        android:layout_below="@id/id_website"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/ic_desc"
+        android:padding="@dimen/string_padding"
+        android:text="@string/desc"
+        android:textColor="@color/golden"
+        android:textSize="@dimen/textSize"/>
+
+</RelativeLayout>
+</ScrollView>

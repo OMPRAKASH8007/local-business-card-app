@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">PVR cinemas</string>
+    <string name="desc">3 Screens \n Show starts at 11:00am 2:30pm 6:00pm ...Other 2 screens start with 15 minutes gap</string>
+    <string name="address">Gravity Mall,Bankman Colony,Patna,Bihar 800020</string>
+    <string name="contact">09155915508</string>
+    <string name="website">https://www.pvrcinemas.com/</string>
+</resources>
